@@ -556,7 +556,7 @@
                 <input type="password" id="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Sign In</button>
-            <p style="font-size: 12px; margin-top: 20px; color: var(--text-secondary);">Demo: admin / admin123</p>
+            <p style="font-size: 12px; margin-top: 20px; color: var(--text-secondary);">version 1</p>
         </form>
     </div>
 </div>
@@ -896,7 +896,7 @@
         e.preventDefault();
         const user = document.getElementById("username").value;
         const pass = document.getElementById("password").value;
-        if ((user === "admin" && pass === "admin123") || (user === "user" && pass === "user123")) {
+        if ((user === "admin" && pass === "123") || (user === "user" && pass === "user123")) {
             currentUser = { username: user, role: user === "admin" ? "admin" : "user" };
             document.getElementById("userAvatar").innerText = user.charAt(0).toUpperCase();
             document.getElementById("userName").innerText = user;
